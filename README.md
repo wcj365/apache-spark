@@ -5,4 +5,5 @@ The following technologies are used:
 - Google Colab
 - Google Drive
 ## References
-[Education Data Portal](https://educationdata.urban.org/)
+- [Education Data Portal](https://educationdata.urban.org/)
+- [US Department of Education - College Scorecard](https://collegescorecard.ed.gov/)
