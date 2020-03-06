@@ -29,16 +29,25 @@ Tip: To find out all versions of Java installed, run this command `$update-alter
 - Apache Spark 3.x runs on JDK 11
 ### Step 4 - Install Apache Spark 
 - `$cd /opt`
-- download Apache Spark tarball \ 
-The latest version number may be different and need to be changed according. It is 2.4.5 as of 3/3/2020. \
-`$sudo curl -O "https://downloads.apache.org/spark/spark-2.4.5/spark-2.4.5-bin-hadoop2.7.tgz"
-- Extract tarball \
+- download Apache Spark tarball 
+
+The latest version number may be different and need to be changed according. It is 2.4.5 as of 3/3/2020. 
+
+`$sudo curl -O https://downloads.apache.org/spark/spark-2.4.5/spark-2.4.5-bin-hadoop2.7.tgz`
+- Extract tarball 
+
 `$tar xvf spark-2.4.5-bin-hadoop2.7.tgz`
-- Delete the targball \
+
+- Delete the targball 
+
 `$rm spark-2.4.5-bin-hadoop2.7.tgz`
-- Create a symbolic link as a shortcut \
+
+- Create a symbolic link as a shortcut 
+
 `ln -s /opt/spark-2.4.5-bin-hadoop2.7 /opt/spark`
+
 ### Step 5 - Set Up Spark Environment Variable
+
 `$vi .bashrc` 
 
 Insert the following two lines:
@@ -51,9 +60,10 @@ Insert the following two lines:
 and run this command `$source .bashrc`
 
 ### Step 5 - Run Spark Python Shell
-`#pyspark`
+`$pyspark`
 
 While in the pyspark shell as prompted by >>>, perform the following test:
+
 - `>>>a = sc.parallelize(range4))`
 - `>>>a.collect()    # this should return [0,1,2,3]`
 - `>>>a.count()      # this should return 4`
@@ -70,19 +80,23 @@ Note:
     - If installed, Anaconda comes with its own Python
     
 ### Step 6 - Start up a Standalone Spark Master 
-`#start-master.sh`
+
+`$start-master.sh`
 
 The Master web UI is http://<host>:8080. However we need to install GUI desktop and a web browser.
     
 ### Step 7 - Start up a Spark Worker Process (Slave)
+
 `#start-slave.sh spark://<host>:7077`
 
 The Applications/Jobs web UI is http://<host>:4040. However we need to install GUI desktop and a web browser.
 
 ### Step 8 - Run Spark Python Shell with the Spark Master
-`#pyspark --master spark://<host>:7077`
+
+`$pyspark --master spark://<host>:7077`
 
 While in the pyspark shell as prompted by >>>, perform the following test (see step 5):
+
 - `>>>a = sc.parallelize(range4))`
 - `>>>a.collect()    # this should return [0,1,2,3]`
 - `>>>a.count()      # this should return 4`
@@ -90,10 +104,10 @@ While in the pyspark shell as prompted by >>>, perform the following test (see s
 - `>>>quit()         # exit the shell`
 
 ### Step 9 - Stop Spark Slave and Master
-`#stop-slave.sh`
 
-`#stop-master.sh`
+`$stop-slave.sh`
 
+`$stop-master.sh`
 
 ## Note on AWS EC2 
 Use SSH to log on to AWS EC2 instance:
