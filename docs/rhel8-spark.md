@@ -39,6 +39,8 @@ The latest version number may be different and need to be changed according. It 
 `$tar xvf spark-2.4.5-bin-hadoop2.7.tgz`
 - Delete the targball \
 `$rm spark-2.4.5-bin-hadoop2.7.tgz`
+- Create a symbolic link as a shortcut \
+`ln -s /opt/spark-2.4.0-bin-hadoop2.7 /opt/spark`
 ### Step 9 - Set Up Spark Environment Variable
 `$vi .bashrc` 
 
