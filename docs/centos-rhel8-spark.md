@@ -1,4 +1,4 @@
-# Install Apache Spark on RHEL/Centos 8 
+# Install Apache Spark on Centos/RHEL 8 
 Establish a Apache Spark environment a RHEL 8 Host for Big Data Analytics. 
 - Install Python 3 
 - Install Java 8 JDK
