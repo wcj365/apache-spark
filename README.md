@@ -1,6 +1,8 @@
 # Big Data Analytics with Apache Spark
 ![](https://github.com/wcj365/apache-spark/blob/master/images/Spark-in-Hadoop.GIF)
-![]()
+
+![](https://github.com/wcj365/apache-spark/blob/master/images/Spark-Architecture.GIF)
+
 The following technologies are used:
 - Apache Spark
 - PySpark
