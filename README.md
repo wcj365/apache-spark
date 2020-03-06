@@ -1,4 +1,6 @@
 # Big Data Analytics with Apache Spark
+This repository documents my journey of learning Apache Spark, from installation to programming. 
+
 ![](https://github.com/wcj365/apache-spark/blob/master/images/Spark-in-Hadoop.GIF)
 
 ![](https://github.com/wcj365/apache-spark/blob/master/images/Spark-Architecture.GIF)
