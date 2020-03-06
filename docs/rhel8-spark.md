@@ -6,6 +6,7 @@ Establish a Apache Spark environment on the Cloud to practice Big Data Analytics
 - Install Apache Spark 2.4.5
 
 ## References
+- [Open JDK Install](https://openjdk.java.net/install/)
 - [How to install Java 8 on RHEL 8](https://www.tecmint.com/install-java-on-rhel-8/)
 - [How to install spark on RHEL 8](https://linuxconfig.org/how-to-install-spark-on-redhat-8)
 
@@ -40,19 +41,17 @@ The latest version number may be different and need to be changed according. It 
 - Delete the targball \
 `$rm spark-2.4.5-bin-hadoop2.7.tgz`
 - Create a symbolic link as a shortcut \
-`ln -s /opt/spark-2.4.0-bin-hadoop2.7 /opt/spark`
+`ln -s /opt/spark-2.4.5-bin-hadoop2.7 /opt/spark`
 ### Step 9 - Set Up Spark Environment Variable
 `$vi .bashrc` 
 
 Insert the following two lines:
 - `export SPARK_HOME=/opt/spark`
 - `export PATH=$PATH:$SPARK_HOME/bin:$SPARK_HOME/sbin`
+- `export PYSPARK_PYTHON=python3`
 
 and run this command `#source .bashrc`
-### Step 10 - Set up Spark Python link in .profile
-`#vi .profile` 
 
-Insert this line: `export PYSPARK_PYTHON=python3` and run this command `#source .profile`
 ### Step 11 - Start up a Standalone Spark Master 
 `#start-master.sh`
 
