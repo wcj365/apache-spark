@@ -83,6 +83,7 @@ While in the pyspark shell as prompted by >>>, perform the following test:
 - `>>>a.collect()    # this should return [0,1,2,3]`
 - `>>>a.count()      # this should return 4`
 - `>>>quit()         # exit the shell`
+
 These statements server as a test for the success/failure of the installation. I have encountered problems due to issues with Java version compaibility. Also Python version compatibility too. Note:
 - Apache Spark 2.x runs on JDK 8, not JDK 11. 
 - Apache Spark requires JDK. JRE is not enough.
