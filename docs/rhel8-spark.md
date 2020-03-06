@@ -46,9 +46,11 @@ The latest version number may be different and need to be changed according. It 
 `$vi .bashrc` 
 
 Insert the following two lines:
-- `export SPARK_HOME=/opt/spark`
-- `export PATH=$PATH:$SPARK_HOME/bin:$SPARK_HOME/sbin`
-- `export PYSPARK_PYTHON=python3`
+
+- alias python=python3
+- export SPARK_HOME=/opt/spark
+- export PATH=$PATH:$SPARK_HOME/bin:$SPARK_HOME/sbin
+- export PYSPARK_PYTHON=python3
 
 and run this command `#source .bashrc`
 
