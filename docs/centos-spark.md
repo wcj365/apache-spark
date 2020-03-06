@@ -1,5 +1,5 @@
 # Install Apache Spark on Ubuntu
-This tutorial documents the steps to set up Apache Spark to practice big data analytics on a Windows machine. It is not set up on Windows directly. Instead, we use Docker container to install an Ubuntu Linux OS and then install Apache Spark and the related software including Python and Java. 
+This tutorial documents the steps to set up Apache Spark to practice big data analytics on a Windows machine. It is not set up on Windows directly. Instead, we use Docker container to install an Centos Linux OS and then install Apache Spark and the related software including Python and Java. Centos is the open source version of Red Hat Enterprise Linux (RHEL).
 
 Note: Learn about Python's anonymous functions (lambda functions) and its build-in funcitons like map and filter and reduce functions from functools package. THese functions are related to Hadoop MapReduce and pyspark library which aim tro distribute data processing across multiple notes within a cluster. Understanding the concept of functional programming and the benefits it brings to big data analytics. 
 ## Benefits of this Approach
@@ -7,12 +7,11 @@ Note: Learn about Python's anonymous functions (lambda functions) and its build-
 - Linux is a better platform for software development and data science. Especially in the Cloud Computing era, Linux is the prevalent OS. 
 ## Technologies Installed/Used
 - Docker Container 
-- Ubuntu Docker Image
+- Centos Docker Image
 - Java/JDK
 - Python 3
 - Apache Spark
 ## References 
-- [Install Apache Spark on Ubuntu 19.04/18.04 & Debian 10/9/8](https://computingforgeeks.com/how-to-install-apache-spark-on-ubuntu-debian/)
 - [First Steps With PySpark and Big Data Processing](https://realpython.com/pyspark-intro/)
 ## Notes
 - `>` is Windows command line prompt
@@ -22,9 +21,9 @@ Note: Learn about Python's anonymous functions (lambda functions) and its build-
 ### Step 1 - Install Docker on Windows
 Use Linux container instead of Window container. Make sure enable Hyper-v and Container in Windows.
 ### Step 2 - Pull ubuntu Image from Docker Hub
-`>docker pull ubuntu`
+`>docker pull centos`
 ### step 3 - Run ubuntu in Interactive Mode
-`>docker run -it ubuntu` 
+`>docker run -it centos` 
 Notes:
 - it = interactive  
 - The user is root. 
