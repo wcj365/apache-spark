@@ -68,10 +68,12 @@ and run this command `#source .bashrc`
 Insert this line: `export PYSPARK_PYTHON=python3` and run this command `#source .profile`
 ### Step 11 - Start up a Standalone Spark Master 
 `#start-master.sh`
+
+The Master web UI is http://localhost:8080. However we need to install GUI desktop and a web browser.
 ### Step 12 - Start up Spark Worker Process (Slave)
 `#start-slave.sh spark://ubuntu:7077`
 
-The web UI is http://localhost:8080. However we need to install GUI desktop and a web browser.
+The Applications/Jobs web UI is http://localhost:4040. However we need to install GUI desktop and a web browser.
 
 ### Step 14 - Run Spark Python Shell
 `#pyspark`
@@ -81,7 +83,13 @@ While in the pyspark shell as prompted by >>>, perform the following test:
 - `>>>a.collect()    # this should return [0,1,2,3]`
 - `>>>a.count()      # this should return 4`
 - `>>>quit()         # exit the shell`
-
+These statements server as a test for the success/failure of the installation. I have encountered problems due to issues with Java version compaibility. Also Python version compatibility too. Note:
+- Apache Spark 2.x runs on JDK 8, not JDK 11. 
+- Apache Spark requires JDK. JRE is not enough.
+- There may be multiple versions of Python installed on a system, be aware. For example:
+    - System comes with a default Python
+    - There are Python 2 and Python 3 along with pip 2 and pip 3
+    - If installed, Anaconda comes with its own Python
 ### Step 15 - Stop Spark Slave and Master
 `#stop-slave.sh`
 
