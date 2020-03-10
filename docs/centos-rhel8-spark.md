@@ -117,3 +117,39 @@ From windows, open Git bash shell (assuming Git is installed).
 `$ssh -i "wangumbc.pem" ec2-user@<the public IP of the EC2 instance>`
 
 Assuming the private key file "wangumbc.pem" is in the current folder.
+## Note on ECE Lab
+Use the following .bashrc file:
+> \# .bashrc
+>
+> \# Source global definitions
+> if [ -f /etc/bashrc ]; then
+>        . /etc/bashrc
+> fi
+>
+> \# This becomes unnecessary since anaconda bin is first in the path 
+> \# and python is already aliased to python 3 there.
+> \# alias python=python3 
+>
+> \# Don't know where this is used
+> \# export PYTHONPATH=/usr/local/Anaconda3-2019.10-Linux-x86_64/bin/  
+>
+> \# Not sure why there two variables are not needed
+> \# export PYSPARK_PYTHON=python3
+> \# export SPARK_HOME=/usr/local/spark
+>
+> \# anaconda has the latest python version: 3.7.5. we will use this version. 
+> \# THat is why the anaconda bin folder comes first. 
+> \# having anaconda in the PATH helps run jupyter. To run Jupyter Lab, use command $jupyter lab or $jupyter-lab
+> export PATH=/usr/local/anaconda/bin:$PATH:$SPARK_HOME/bin:$SPARK_HOME/sbin
+>
+> \# The system comes with multiple versions of JDK and JRE. 
+> \# Apache Spark 2.4.5 runs with Java 8. 
+> \# Apache Spark 3.X runs on JAva 11.
+> export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.242.b08-0.el7_7.x86_64/
+> export JRE_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.242.b08-0.el7_7.x86_64/jre
+>
+> \# Uncomment the following line if you don't like systemctl's auto-paging feature:
+> \# export SYSTEMD_PAGER=
+>
+> \# User specific aliases and functions
+                                     
