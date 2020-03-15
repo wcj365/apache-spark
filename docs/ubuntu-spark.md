@@ -1,6 +1,8 @@
 # Install Apache Spark on Ubuntu
 This tutorial documents the steps to set up Apache Spark to practice big data analytics on a Windows machine. It is not set up on Windows directly. Instead, we use Docker container to install an Ubuntu Linux OS and then install Apache Spark and the related software including Python and Java. 
 
+As an alternative to Docker, you can install a Ubuntu VM on Windows 10 using Hyper-V Manager (comes with Windows 10). This way you have a full-blown Linux system with desktop experience. We would be able to use internet browser and install Jupyter for running Big Data Analytics using Spark. 
+
 Note: Learn about Python's anonymous functions (lambda functions) and its build-in funcitons like map and filter and reduce functions from functools package. THese functions are related to Hadoop MapReduce and pyspark library which aim tro distribute data processing across multiple notes within a cluster. Understanding the concept of functional programming and the benefits it brings to big data analytics. 
 ## Benefits of this Approach
 - The Windows environment and the Apache Spark environment are separated. Windows is for day to day Office Automation (OA) including  regular use of Windows Office product suite (Words, Excel, PPT, etc.). 
@@ -47,7 +49,7 @@ The latest version number may be different and need to be changed according. It 
 - Extract tarball \
 `#tar xvf spark-2.4.5-bin-hadoop2.7.tgz`
 - Move the Spark folder to /opt \
-`#mv spark-2.4.5-bin-hadoop2.7/ /opt/spark`
+`#mv spark-2.4.5-bin-hadoop2.7/ /opt`
 - Delete the targball \
 `#rm spark-2.4.5-bin-hadoop2.7.tgz`
 ### Step 7 - Install Vim/Vi 
@@ -58,7 +60,7 @@ The latest version number may be different and need to be changed according. It 
 `#vi .bashrc` 
 
 Insert the following two lines:
-- `export SPARK_HOME=/opt/spark`
+- `export SPARK_HOME=/opt/spark-2.4.5-bin-hadoop2.7`
 - `export PATH=$PATH:$SPARK_HOME/bin:$SPARK_HOME/sbin`
 
 and run this command `#source .bashrc`
