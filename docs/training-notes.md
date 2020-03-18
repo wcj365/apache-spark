@@ -4,3 +4,5 @@
 ## Start a docker interactive terminal (it) 
 `docker exec -it <ontainer-id> /bin/bash`
 
+` scp  ipython@ipython01.mitre.org:spark-course-data.tar.bz2 .`
+
