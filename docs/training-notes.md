@@ -9,5 +9,13 @@
 `sudo service docker status`
 ## To start up the Docker engine
 `sudo service docker start `
+## To check out the code from repository into a local new branch
+`git checkout -b <new_branch>`
+## Apache Concepts 
+- Distributed vs Non-distributed (local)
+- Edge Node and Client Machine (the driver, entry point)
+- Cluster Manager/Resource Manager (Standalone, Apache Mesos, YARN, aws EMR)
+- Worker Nodes
+    
 
 
