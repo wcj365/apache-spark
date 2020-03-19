@@ -11,6 +11,7 @@ The following technologies are used:
 - Google Colab
 - Google Drive
 ## References - Technology
+- [Learning Apache Spark](https://runawayhorse001.github.io/LearningApacheSpark/pyspark.pdf)
 - [Big Data Analytics with Apache Spark](http://chipset-cost.eu/wp-content/uploads/2019/05/Apostolos-Papadopoulos-Spark-Slides.pdf)
 - [Big Data with Spark in Google Colab](https://medium.com/@rmache/big-data-with-spark-in-google-colab-7c046e24b3)
 - [Getting Started with PySpark on AWS EMR](https://towardsdatascience.com/getting-started-with-pyspark-on-amazon-emr-c85154b6b921)
