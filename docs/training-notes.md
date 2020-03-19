@@ -16,6 +16,8 @@
 - Edge Node and Client Machine (the driver, entry point)
 - Cluster Manager/Resource Manager (Standalone, Apache Mesos, YARN, aws EMR)
 - Worker Nodes
-    
+## Pipelined RDD vs RDD
+- PipelinedRDD: PipelinedRDD operations are pipelined and sent to worker; the code is executed from top to bottom. It is a subclass of RDD.
+- RDD: Represents a constant, partitioned collection of elements that can be worked on in parallel.
 
 
