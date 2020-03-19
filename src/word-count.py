@@ -1,7 +1,7 @@
 # This program takes two arguments - the input file name and the threshold
 # it prints out the words whoes occurrence exceeds the threshold
 # To submit the program to a local standlone Apache Spark:
-# $/usr/local/spark/bin/submit-spark word-count.py ../data/external/jay.txt 10
+# $/usr/local/spark/bin/submit-spark word-count.py ../data/external/against-interpretation.txt 10
 
 import sys
 from pyspark import SparkContext, SparkConf
