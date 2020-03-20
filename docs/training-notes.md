@@ -1,4 +1,12 @@
 # Notes from Apache Spark Training
+### PySpark Interactive Python Spark Shell
+- Non-distributed (non-clustered)
+    - local[1], 1 thread (core) 
+    - local[2], 2 threads(cores)
+    - local[*], using all cores in the host
+- Distributed (clustered)
+    - master = spark://<host>:7077 
+    
 ### Three Types of Programming Paradigm
 - Procedural
 - Functional 
