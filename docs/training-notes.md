@@ -59,7 +59,7 @@
 - docker log
 - mount point is important for docker. /home/data/postgres
 - unix command: less, more, tail and head
-- pickler
+- Python pickle object serialization
 - copy env to .env
 - low latency and high throughput
 - fastjump TDP Transportation Data Platform
