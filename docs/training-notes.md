@@ -1,4 +1,8 @@
 # Notes from Apache Spark Training
+### Three Types of Programming Paradigm
+- Procedural
+- Functional 
+- Object-oriented
 ### To convert Jupyter notebook to presentaion in PDF (PPT, may be)
 `jupyter nbconvert --to slides <notebook>.ipynb --post serve`
 ### Start an interactive terminal (it) to a docker container
