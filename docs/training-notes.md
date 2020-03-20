@@ -48,6 +48,7 @@
 ### Check docker network status
 `docker network inspect <network id>`
 ### Some concepts
+- Docker Swarm vs Kubernetes for container ochestration
 - !pip vs !run
 - arrow-based columnar data
 - zipWithIndex RDD header row
