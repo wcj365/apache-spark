@@ -1,4 +1,6 @@
-# Use Jupyter Notebooks on a Remote Server through SSH Tunneling
+# Access Jupyter Notebooks Server on a Remote Host through SSH Tunneling
+## References
+- [How to run Jupyter Notebooks on remote server — SSH](https://medium.com/@apbetahouse45/how-to-run-jupyter-notebooks-on-remote-server-part-1-ssh-a2be0232c533)
 ## Problem - Remote Access to Jupyter Notebook Server
 When a remote host starts a Jupyter Notebook server, it is only accessible via localhost:8888
 and cannot be accessed directly from remote clients. For example, my MITRE laptop web browser is not able to 
