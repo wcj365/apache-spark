@@ -25,6 +25,8 @@
 `sudo service docker start`
 ### To check out the code from repository into a local new branch
 `git checkout -b <new_branch>`
+### To list all branches in the repository
+`git branch -a`
 ### To check out the code from a branch of a repository
 `git checkout <branch>`
 ### Apache Spark Deployment Models 
