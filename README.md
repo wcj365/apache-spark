@@ -17,6 +17,7 @@ The following technologies are used:
 - [Getting Started with PySpark on AWS EMR](https://towardsdatascience.com/getting-started-with-pyspark-on-amazon-emr-c85154b6b921)
 - [Cloudera Spark Guide](https://docs.cloudera.com/content/www/en-us/documentation/enterprise/6/6.3/PDF/cloudera-spark.pdf)
 - [Why Use SparkSession?](https://blog.knoldus.com/spark-why-should-we-use-sparksession/)
+- [How to use Dataframe in pySpark (compared with SQL)](https://www.jie-tao.com/how-to-use-dataframe-in-pyspark/)
 ## References - Data 
 - [Education Data Portal](https://educationdata.urban.org/)
 - [US Department of Education - College Scorecard](https://collegescorecard.ed.gov/)
