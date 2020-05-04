@@ -11,6 +11,9 @@ The following technologies are used:
 - Google Colab
 - Google Drive
 ## References - Technology
+- https://docs.cloudera.com/runtime/7.1.0/running-spark-applications/topics/spark-configure-apps.html
+- https://docs.cloudera.com/runtime/7.1.0/running-spark-applications/spark-running-applications.pdf
+- https://docs.cloudera.com/runtime/7.1.0/howto-data-science.html
 - [Learning Apache Spark](https://runawayhorse001.github.io/LearningApacheSpark/pyspark.pdf)
 - [Big Data Analytics with Apache Spark](http://chipset-cost.eu/wp-content/uploads/2019/05/Apostolos-Papadopoulos-Spark-Slides.pdf)
 - [Big Data with Spark in Google Colab](https://medium.com/@rmache/big-data-with-spark-in-google-colab-7c046e24b3)
