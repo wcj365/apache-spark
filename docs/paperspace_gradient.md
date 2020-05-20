@@ -3,9 +3,9 @@
 Paperspace Gradient provides Linux shell access. Open Linux terminal from Jupyter Lab. 
 1. `#apt-get update`
 2. `#apt-get install apt-utils`
-3. `apt-get install openjdk-8-jdk-headless -qq > /dev/null`
+3. `#apt-get install openjdk-8-jdk-headless -qq > /dev/null`
 4. `#java -version` -  This will verify Java is installed.
-5. `pip install pyspark`
+5. `#pip install pyspark`
 ## Step 2 - Start using Big Data Analytics in your Jupyter Notebooks.
 ```
 from pyspark.sql import SparkSession
