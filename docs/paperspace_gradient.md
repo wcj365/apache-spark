@@ -8,8 +8,8 @@ Paperspace Gradient provides Linux shell access. Open Linux terminal from Jupyte
 5. `#pip install pyspark`
 
 Note: interesting that Apache Spark is not required. I used to install it:
-`#!wget -q http://apache.osuosl.org/spark/spark-2.4.5/spark-2.4.5-bin-hadoop2.7.tgz`
-`#!tar xf spark-2.4.5-bin-hadoop2.7.tgz`
+- `#!wget -q http://apache.osuosl.org/spark/spark-2.4.5/spark-2.4.5-bin-hadoop2.7.tgz`
+- `#!tar xf spark-2.4.5-bin-hadoop2.7.tgz`
 
 ## Step 2 - Start using Big Data Analytics in your Jupyter Notebooks.
 ```
