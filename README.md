@@ -11,6 +11,7 @@ The following technologies are used:
 - Google Colab
 - Google Drive
 ## References - Technology
+- [PostgreSQL and Spark](https://severalnines.com/database-blog/big-data-postgresql-and-apache-spark)
 - https://docs.cloudera.com/runtime/7.1.0/running-spark-applications/topics/spark-configure-apps.html
 - https://docs.cloudera.com/runtime/7.1.0/running-spark-applications/spark-running-applications.pdf
 - https://docs.cloudera.com/runtime/7.1.0/howto-data-science.html
